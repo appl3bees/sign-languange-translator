@@ -3,12 +3,12 @@
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
-import VideoExceptions
+import VideoExceptions #import custom exception class
 import cv2 # import the cv2 library
 
 cap = cv2.VideoCapture(0) #Global variable: initialize the cap variable to the video caputre device
 
-def getframe():
+def getframe(): #method to check if the frames are being captured called from main
     ret, frame = cap.read()
     try:
         if frame is None:
@@ -17,10 +17,18 @@ def getframe():
         print("Error:", e)
         return frame
 
-# Press the green button in the gutter to run the script.
+def getcamera(): #method to check if the camera is able can be accessed called from main
+    try:
+        if not cap.isOpened():
+            raise VideoExceptions.CameraNotFoundError()
+    except VideoExceptions.CameraNotFoundError as e:
+        print("Error:", e)
+        return
+
 if __name__ == '__main__':
 
    # ret, frame = cap.read()
     getframe()
+    getcamera()
 
 
