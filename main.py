@@ -17,7 +17,7 @@ def getframe(): #method to check if the frames are being captured called from ma
         print("Error:", e)
         return frame
 
-def getcamera(): #method to check if the camera is able can be accessed called from main method
+def getcamera(): #method to check if the camera is able can be accessed called from main
     try:
         if not cap.isOpened():
             raise VideoExceptions.CameraNotFoundError()
