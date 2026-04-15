@@ -136,11 +136,30 @@
       <option name="project" value="LOCAL" />
       <updated>1776205352271</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Created initial enviroment and added a VideoExceptions.py class to handle exceptions for. Will initially check that the camera is accessable.">
+      <option name="closed" value="true" />
+      <created>1776213658642</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1776213658642</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created initial enviroment and added a VideoExceptions.py class to handle exceptions for. Will initially check that the camera is accessable." />
     <option name="LAST_COMMIT_MESSAGE" value="Created initial enviroment and added a VideoExceptions.py class to handle exceptions for. Will initially check that the camera is accessable." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

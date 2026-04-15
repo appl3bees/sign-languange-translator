@@ -7,7 +7,8 @@ import VideoExceptions #import custom exception class
 import cv2 # import the cv2 library
 
 cap = cv2.VideoCapture(0) #Global variable: initialize the cap variable to the video caputre device
-opencam = cv2.VideoCapture.open(cap)
+#opencam = cv2.VideoCapture.open(cap)
+
 
 def getframe(): #method to check if the frames are being captured called from main
     ret, frame = cap.read()
@@ -16,7 +17,7 @@ def getframe(): #method to check if the frames are being captured called from ma
             raise VideoExceptions.FrameReadError()
     except VideoExceptions.FrameReadError as e:
         print("Error:", e)
-        return frame
+    return frame
 
 def getcamera(): #method to check if the camera is able can be accessed called from main
     try:
@@ -24,17 +25,28 @@ def getcamera(): #method to check if the camera is able can be accessed called f
             raise VideoExceptions.CameraNotFoundError()
     except VideoExceptions.CameraNotFoundError as e:
         print("Error:", e)
-        return
+        exit(1)
 
 if __name__ == '__main__':
+    getcamera()
+    getframe()
 
    # apiID = cv2.getBackendName()
+    while True:
+        frame = getframe()
+
+        if frame is None:
+            break
+        cv2.imshow("Sign Languange Translator", frame)
+
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
 
 
+    cap.release()
+    cv2.destroyAllWindows()
+       # ret, frame = cap.read()
 
-   # ret, frame = cap.read()
-    getframe()
-    getcamera()
-    opencam()
+        #opencam()
 
 
