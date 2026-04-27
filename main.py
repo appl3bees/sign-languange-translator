@@ -5,9 +5,13 @@
 
 import VideoExceptions #import custom exception class
 import cv2 # import the cv2 library
+import mediapipe
+import SkeletonTracker
+
 
 cap = cv2.VideoCapture(0) #Global variable: initialize the cap variable to the video caputre device
 #opencam = cv2.VideoCapture.open(cap)
+tracker = SkeletonTracker()
 
 
 def getframe(): #method to check if the frames are being captured called from main
@@ -31,6 +35,8 @@ if __name__ == '__main__':
     getcamera()
     getframe()
 
+
+
    # apiID = cv2.getBackendName()
     while True:
         frame = getframe()
@@ -48,3 +54,5 @@ if __name__ == '__main__':
        # ret, frame = cap.read()
 
         #opencam()
+
+
