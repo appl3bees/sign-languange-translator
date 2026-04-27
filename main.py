@@ -5,8 +5,6 @@
 
 import VideoExceptions #import custom exception class
 import cv2 # import the cv2 library
-from pynput import keyboard
-
 
 cap = cv2.VideoCapture(0) #Global variable: initialize the cap variable to the video caputre device
 #opencam = cv2.VideoCapture.open(cap)
@@ -50,5 +48,3 @@ if __name__ == '__main__':
        # ret, frame = cap.read()
 
         #opencam()
-
-
