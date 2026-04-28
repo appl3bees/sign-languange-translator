@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab811e8f-fd1a-4bbc-9552-ed676a7f1754" name="Changes" comment="added skeleton tracker class and mediapipe setup 1:47 04/27">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ab811e8f-fd1a-4bbc-9552-ed676a7f1754" name="Changes" comment="finished the detection of hands and error handling 2:36pm 04/28">
       <change beforePath="$PROJECT_DIR$/SkeletonTracker.py" beforeDir="false" afterPath="$PROJECT_DIR$/SkeletonTracker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777309933255</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="finished the detection of hands and error handling 2:36pm 04/28">
+      <option name="closed" value="true" />
+      <created>1777401384827</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1777401384828</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,14 +136,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created initial enviroment and added a VideoExceptions.py class to handle exceptions for. Will initially check that the camera is accessable. &#10;created a window to access the camera" />
     <MESSAGE value="Had to copy paste old commands from github repo 1:12 04/37" />
-    <option name="LAST_COMMIT_MESSAGE" value="Had to copy paste old commands from github repo 1:12 04/37" />
+    <MESSAGE value="finished the detection of hands and error handling 2:36pm 04/28" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished the detection of hands and error handling 2:36pm 04/28" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/SkeletonTracker.py</url>
-          <line>32</line>
+          <line>24</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>

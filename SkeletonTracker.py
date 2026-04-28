@@ -19,16 +19,8 @@ class SkeletonTracker:
 
     def detect_hands(self, frame):
 
-        mp_image = mp.Image(
-            image_format=mp.ImageFormat.SRGB,
-            data=cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-        )
+        mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
 
-        #try:
-        #    if frame is None:
-         #       raise VideoExceptions.FrameReadError()
-      #  except VideoExceptions.FrameReadError as e:
-       #     print("Error:", e)
 
         results = self.hands.detect(mp_image)
 
@@ -40,6 +32,6 @@ class SkeletonTracker:
 
 
     def draw(self):
-        
+
 
 
