@@ -1,8 +1,3 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
 import VideoExceptions #import custom exception class
 import cv2 # import the cv2 library
 import mediapipe
@@ -10,8 +5,6 @@ import SkeletonTracker
 
 
 cap = cv2.VideoCapture(0) #Global variable: initialize the cap variable to the video caputre device
-#opencam = cv2.VideoCapture.open(cap)
-tracker = SkeletonTracker()
 
 
 def getframe(): #method to check if the frames are being captured called from main
@@ -33,16 +26,16 @@ def getcamera(): #method to check if the camera is able can be accessed called f
 
 if __name__ == '__main__':
     getcamera()
-    getframe()
+    tracker = SkeletonTracker.SkeletonTracker()
 
-
-
-   # apiID = cv2.getBackendName()
     while True:
         frame = getframe()
 
         if frame is None:
-            break
+            continue
+
+        frame = tracker.detect_hands(getframe())
+
         cv2.imshow("Sign Languange Translator", frame)
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
@@ -51,8 +44,5 @@ if __name__ == '__main__':
 
     cap.release()
     cv2.destroyAllWindows()
-       # ret, frame = cap.read()
-
-        #opencam()
 
 
