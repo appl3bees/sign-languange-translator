@@ -55,6 +55,3 @@ class SkeletonTracker:
                 cv2.line(frame, (sx, sy), (ex, ey), (255, 255, 255), 2)
 
 
-
-
-
