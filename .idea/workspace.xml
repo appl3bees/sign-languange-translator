@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab811e8f-fd1a-4bbc-9552-ed676a7f1754" name="Changes" comment="finished the detection of hands and error handling 2:36pm 04/28">
+    <list default="true" id="ab811e8f-fd1a-4bbc-9552-ed676a7f1754" name="Changes" comment="added the draw_landmarks method and added global variable for hand connections manually 2:00 04/29">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SkeletonTracker.py" beforeDir="false" afterPath="$PROJECT_DIR$/SkeletonTracker.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,17 +40,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -128,7 +127,23 @@
       <option name="project" value="LOCAL" />
       <updated>1777401621457</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="finished the detection of hands and error handling 2:36pm 04/28">
+      <option name="closed" value="true" />
+      <created>1777485434440</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1777485434440</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added the draw_landmarks method and added global variable for hand connections manually 2:00 04/29">
+      <option name="closed" value="true" />
+      <created>1777485515429</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1777485515429</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,6 +161,7 @@
     <MESSAGE value="Created initial enviroment and added a VideoExceptions.py class to handle exceptions for. Will initially check that the camera is accessable. &#10;created a window to access the camera" />
     <MESSAGE value="Had to copy paste old commands from github repo 1:12 04/37" />
     <MESSAGE value="finished the detection of hands and error handling 2:36pm 04/28" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished the detection of hands and error handling 2:36pm 04/28" />
+    <MESSAGE value="added the draw_landmarks method and added global variable for hand connections manually 2:00 04/29" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the draw_landmarks method and added global variable for hand connections manually 2:00 04/29" />
   </component>
 </project>
